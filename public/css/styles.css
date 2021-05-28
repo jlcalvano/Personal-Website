@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500;1,700&display=swap');
+
+:root {
+    --primary-color:#282828;
+    --secondary-color: #F2F2F2;
+
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family:Roboto, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color:#00A0C6;
+    text-decoration:none; 
+    cursor:pointer;  
+}
+
+
+h1, h1 {
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+p {
+    margin: 10px 0;
+}
+
+
+
+/* Nav */
+.nav {
+    background-color: var(--primary-color);
+    height: 45px;
+    
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav li {
+    color:white;
+    font-size: .95rem;
+    font-weight: bolder;
+    padding: 10px;
+    margin: 0 5px;
+}
+
+.nav .fa-1 {
+    font-size: .9em; 
+    margin:auto;
+    color: var(--primary-color);
+    border: var(--secondary-color);
+}
+
+
+
+
+/* Welcome */
+.welcome {
+    background-color: var(--primary-color);
+    color: #fff;
+    height: 25rem;
+}
+
+.welcome .flex {
+    flex-direction: column;
+}
+
+.welcome .signature {
+    font-family: 'Playfair Display', serif;
+    display:inline;
+}
+
+.hi h1 {
+    font-size: xx-large;
+    justify-content: center;
+    display:flex;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+
+/* Card */
+.card {
+    background-color: #E8E8E8;
+    color: black;
+    padding: 15px;
+    width: 25rem;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+    position: relative;
+    top: -95px;
+    z-index: 100;
+    justify-self: center;
+}
+
+.card ul {
+    list-style-type:circle;
+    margin-left: 15%;
+    padding-top: 10px;
+}
