@@ -7,6 +7,31 @@
     <title>James Calvano | Technologist interested in Business</title>
     <link rel="stylesheet" href="css/styles.css">    
     <link rel="stylesheet" href="css/utilities.css">
+    <script>
+        document.addEventListener('click', function (event) {
+
+        // If the clicked element doesn't have the right selector, bail
+        if (!event.target.matches('.click-me')) return;
+
+        // Don't follow the link
+        event.preventDefault();
+
+        let root = document.documentElement;
+
+        if(root.style.getPropertyValue('--primary-color') === "#282828") {
+            root.style.setProperty('--primary-color', "#C15A67");
+           
+        } else {
+            root.style.setProperty('--primary-color', "#282828");
+        }
+        
+
+        // Log the clicked element in the console
+        console.log(root.style.getPropertyValue('--primary-color'));
+
+        }, false);
+
+    </script>
 </head>
 <body>
     <section class="nav">
@@ -14,7 +39,7 @@
             <nav>
                 <ul>
                     <li><a href="/">Home</a></li>
-                    <li><a href="/about">About</a></li>
+                    <li><a href="./about.html">About</a></li>
                     <li>Resume</li>
                     <li>Reach out!</li>
                 </ul>
@@ -31,20 +56,20 @@
     </section>
     <section class="about">
         <div class="card">
-            <h3><b>The too long; didn't read (tldr):</b></h3>
             <ul>
-                <li><b>new jersey</b> native</li>
-                <li><b>finance and economics</b> educated</li>
-                <li><b>dayton flyer</b></li>
-                <li><b>technology/data</b> enthusiast</li>
-                <li><b>business</b> enthusiast</li>
-                <li><b>travel</b> enthusiast</li>
-                <li><b>personal finance</b> enthusiast</li>
+                <li><b>New Jersey</b> native</li>
+                <li><b>Finance and Economics</b> educated</li>
+                <li><b>Dayton Flyer</b></li>
+                <li><b>Technology/Data</b> enthusiast</li>
+                <li><b>Business</b> enthusiast</li>
+                <li><b>Travel</b> enthusiast</li>
+                <li><b>Personal Finance</b> enthusiast</li>
             </ul>
         </div>
         <div class="container grid">
-            <button type="button">Find more about me</button>
-            <button type="button">Get straight to business</button>
+            <button class="butt" type="button">Find more about me</button>
+            <button class="butt" type="button">Get straight to business</button>
+            <button class="butt click-me" type="button">Change Color</button>
         </div>
     </section>
 </body>
