@@ -102,9 +102,6 @@ p {
 
 }
 
-
-
-
 /* Home - Card */
 .card {
     background-color: #E8E8E8;
@@ -126,7 +123,6 @@ p {
     padding-top: 10px;
 }
 
-
 .links a {
     padding: 12px 24px;
     background-color: var(--primary-color);
@@ -135,7 +131,9 @@ p {
     transition: transform 250ms cubic-bezier(.2,.8,.4,1);
     border-radius: 4%;
     border-style: none;
-    width: 250px;    
+    width: 250px;
+    text-align: center;
+    justify-self: center;    
 }
 
 .links .a:hover {
@@ -146,7 +144,6 @@ p {
 /* About  - About */
 .about .flex {
     flex-direction: column;
-
 }
 
 .icons {
@@ -154,10 +151,25 @@ p {
     margin-top: 10px;
 }
 
-
-.about button {
+/* .about button {
     width: 200px;
     height: 50px;
     justify-self: center;
     margin: 8px;
+} */
+
+.about .detail a:link, a:visited {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+}
+  
+.about.detail a:hover, a:active {
+    background-color: white ;
+    color: black;
+    
 }
