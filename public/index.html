@@ -8,26 +8,32 @@
     <link rel="stylesheet" href="css/styles.css">    
     <link rel="stylesheet" href="css/utilities.css">
     <script>
-        document.addEventListener('click', function (event) {
-
-        // If the clicked element doesn't have the right selector, bail
-        if (!event.target.matches('.click-me')) return;
-
-        // Don't follow the link
-        event.preventDefault();
 
         let root = document.documentElement;
 
-        if(root.style.getPropertyValue('--primary-color') === "#282828") {
-            root.style.setProperty('--primary-color', "#C15A67");
-           
-        } else {
-            root.style.setProperty('--primary-color', "#282828");
+        if (sessionStorage.getItem("color")) {
+            // Restore the contents of the text field
+            root.style.setProperty('--primary-color', sessionStorage.getItem("color"));
         }
-        
 
-        // Log the clicked element in the console
-        console.log(root.style.getPropertyValue('--primary-color'));
+        document.addEventListener('click', function (event) {
+
+            // If the clicked element doesn't have the right selector, bail
+            if (!event.target.matches('.click-me')) return;
+
+            // Don't follow the link
+            event.preventDefault();
+
+            if(root.style.getPropertyValue('--primary-color') === "#800000") {
+                root.style.setProperty('--primary-color', "#282828");
+                sessionStorage.setItem("color",  "#282828");
+            } else {
+                root.style.setProperty('--primary-color', "#800000");
+                sessionStorage.setItem("color",  "#800000");
+            }
+            
+            // Log the clicked element in the console
+            console.log(root.style.getPropertyValue('--primary-color'));
 
         }, false);
 
