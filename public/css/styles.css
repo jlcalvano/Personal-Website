@@ -45,8 +45,6 @@ p {
     margin: 10px 0;
 }
 
-
-
 /* Nav */
 .nav {
     background-color: var(--primary-color);
@@ -73,7 +71,7 @@ p {
     border: var(--secondary-color);
 }
 
-/* Welcome */
+/* Home - Welcome */
 .welcome {
     background-color: var(--primary-color);
     color: #fff;
@@ -142,23 +140,36 @@ p {
 
 
 /* About  - About */
+
+.about {
+    /* max-width: 85%; */
+    margin: 25px;
+}
+
 .about .flex {
     flex-direction: column;
 }
 
-.icons {
-    padding: 8px;
-    margin-top: 10px;
+.about h1,h3 {
+    padding: 5px;
 }
 
-/* .about button {
-    width: 200px;
-    height: 50px;
-    justify-self: center;
-    margin: 8px;
-} */
+.icons > a {
+    padding: 8px;
 
-.about .detail a:link, a:visited {
+}
+
+.detail {
+    padding: 10px;
+}
+
+
+.detail a {
+    color: white;
+    text-decoration: none;
+}
+
+.detail a:link {
     background-color: var(--primary-color);
     color: white;
     padding: 14px 25px;
@@ -167,9 +178,12 @@ p {
     display: inline-block;
     border-radius: 10px;
 }
-  
-.about.detail a:hover, a:active {
+
+.detail a:hover, a:active {
     background-color: white ;
     color: black;
     
 }
+
+
+
