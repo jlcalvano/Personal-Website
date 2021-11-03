@@ -9,43 +9,14 @@
     <link rel="stylesheet" href="css/styles.css" />    
     <link rel="stylesheet" href="css/utilities.css" />
     <!--<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"> -->
-<!--     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
-    <link rel="manifest" href="site.webmanifest" /> -->
-    <script>
+    <link rel="manifest" href="site.webmanifest" /> 
 
-        let root = document.documentElement;
-
-        if (sessionStorage.getItem("color")) {
-            // Restore the contents of the text field
-            root.style.setProperty('--primary-color', sessionStorage.getItem("color"));
-        }
-
-        document.addEventListener('click', function (event) {
-
-            // If the clicked element doesn't have the right selector, bail
-            if (!event.target.matches('.click-me')) return;
-
-            // Don't follow the link
-            event.preventDefault();
-
-            if(root.style.getPropertyValue('--primary-color') === "#800000") {
-                root.style.setProperty('--primary-color', "#282828");
-                sessionStorage.setItem("color",  "#282828");
-            } else {
-                root.style.setProperty('--primary-color', "#800000");
-                sessionStorage.setItem("color",  "#800000");
-            }
-            
-            // Log the clicked element in the console
-            //console.log(root.style.getPropertyValue('--primary-color'));
-
-        }, false);
-
-    </script>
 </head>
 <body>
     <section class="nav">
@@ -87,4 +58,36 @@
         </div>
     </section>
 </body>
+    
+<script>
+
+    let root = document.documentElement;
+
+    if (sessionStorage.getItem("color")) {
+        // Restore the contents of the text field
+        root.style.setProperty('--primary-color', sessionStorage.getItem("color"));
+    }
+
+    document.addEventListener('click', function (event) {
+
+        // If the clicked element doesn't have the right selector, bail
+        if (!event.target.matches('.click-me')) return;
+
+        // Don't follow the link
+        event.preventDefault();
+
+        if(root.style.getPropertyValue('--primary-color') === "#800000") {
+            root.style.setProperty('--primary-color', "#282828");
+            sessionStorage.setItem("color",  "#282828");
+        } else {
+            root.style.setProperty('--primary-color', "#800000");
+            sessionStorage.setItem("color",  "#800000");
+        }
+        
+        // Log the clicked element in the console
+        //console.log(root.style.getPropertyValue('--primary-color'));
+
+    }, false);
+
+</script>
 </html>
