@@ -151,8 +151,6 @@ p {
     margin: 12px;
 }
 
-
-
 .links button:hover {
     transform: scale(1.10);
 }
@@ -174,7 +172,8 @@ p {
 }
 
 .icons > a {
-    padding: 8px;
+    padding-left: 10px;
+    padding-top: 10px;
 
 }
 
