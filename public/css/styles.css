@@ -233,14 +233,10 @@ p {
     border-radius: 10px;
     padding: 20px;
     height: 100%;
+    border-style: solid;
+    border-width: thin ;
 }
 
-.resume .block .half {
-    background-color: var(--third-color);
-    width: 10px;
-    border-radius: 10px;
-    padding: 20px;
-}
 
 .resume ul{
     list-style-type: circle;
