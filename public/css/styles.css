@@ -143,7 +143,7 @@ p {
     color: white;
     cursor: pointer;
     transition: transform 250ms cubic-bezier(.2,.8,.4,1);
-    border-radius: 4%;
+    border-radius: 10px;
     border-style: none;
     width: 250px;
     text-align: center;
