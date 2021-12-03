@@ -4,9 +4,9 @@
 
 :root {
    /*  --primary-color:#282828; */
-    --primary-color:#800000;
-    --secondary-color: #F2F2F2;
-    --third-color: #F5F5F5;
+    --primary-color:#582630;
+    --secondary-color: #FFFFFF;
+    --third-color: #FFFFFF;
 
 }
 
@@ -228,12 +228,20 @@ p {
     color: black;
 }
 
+.resume h3 {
+    padding: 0pt;
+}
+
+
 .resume .block {
     background-color: var(--third-color);
     border-radius: 10px;
     padding: 20px;
     height: 100%;
-    box-shadow:  5px 2px teal;
+    /* box-shadow:  5px 2px black; */
+    border-width: 1px;
+    border: black;
+    border-style: solid;
 }
 
 

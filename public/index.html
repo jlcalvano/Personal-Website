@@ -77,12 +77,12 @@
         // Don't follow the link
         event.preventDefault();
 
-        if(root.style.getPropertyValue('--primary-color') === "#800000") {
+        if(!sessionStorage.getItem("color")) {
             root.style.setProperty('--primary-color', "#282828");
             sessionStorage.setItem("color",  "#282828");
         } else {
-            root.style.setProperty('--primary-color', "#800000");
-            sessionStorage.setItem("color",  "#800000");
+            root.style.removeProperty('--primary-color');
+            sessionStorage.clear();
         }
         
         // Log the clicked element in the console
