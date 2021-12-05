@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display');
-
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap');
 :root {
    /*  --primary-color:#282828; */
     --primary-color:#582630;
@@ -107,8 +106,8 @@ p {
     font-size: 3rem;
 }
 
-.welcome .signature {
-    font-family: 'Playfair Display', serif;
+.signature {
+    font-family: 'Playfair Display';
     display:inline;
     font-size: 4rem;
     padding: 10px;
