@@ -7,6 +7,5 @@
 - About
     - Timeline Resume (Grew up, University, Career)
     - Technology Interests
-    - Volunteering
 - Resume
 - Contact
