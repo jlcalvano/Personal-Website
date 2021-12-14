@@ -66,9 +66,23 @@
             <div class="block">
                 <div style="display: inline-flex;align-items: center;justify-content: space-between;width: 100%;">
                     <h3>Prudential Financial</h3>
-                    <p><b>Oct 2018 - Present</b></p>
+                    <p><b>Feb 2019 - Present • <b id="time"></b></b></p>
                 </div>
-                <p>Technical Systems Specialist</p>
+                <h4>Technical Systems Specialist</h4>
+                <p>Global Technology - Financial Systems - Technology Enablement</p>
+                <ul>
+                    <li style="margin-left: 1rem; margin-right: 1rem;">Documenting, designing and developing technology solutions for Finance Associates (Accounting, Treasury, FP&A) to increase productivity, reduce operational risk</li>
+                    <li style="margin-left: 1rem; margin-right: 1rem;">Saved 500+ hours of manual Excel work through rapidly developed automated applications (Rapid Application Development)</li>
+                    <li style="margin-left: 1rem; margin-right: 1rem;">Collborating with business end-users, project managers as well as development teams</li>
+                </ul>
+            </div>
+            <div class="block">
+                <div style="display: inline-flex;align-items: center;justify-content: space-between;width: 100%;">
+                    <h3>Insight Global</h3>
+                    <p><b>Oct 2018 - Feb 2019 • 4 months</b></p>
+                </div>
+                <h4>Business Systems Analyst</h4>
+                <p>Contract to Hire - Prudential Finanical</p>
             </div>
             <div class="block">
                 <div style="display: inline-flex;align-items: center;justify-content: space-between;width: 100%; ">
@@ -86,4 +100,14 @@
         </div>
     </section>
 </body>
+<script>
+        let today = new Date();
+        let startDate = Date.parse("2019-02-01");
+
+        const diffTime = Math.abs(today - startDate);
+        const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
+        const elem = document.getElementById('time');
+
+        elem.innerHTML = Math.round((diffDays/365) * 100 )/100 + " years";
+</script>
 </html>
