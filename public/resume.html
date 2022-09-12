@@ -31,7 +31,6 @@
                     <li><a href="./">Home</a></li>
                     <li><a href="./about">About</a></li>
                     <li><a href="./resume">Resume</a></li>
-                    <li><a href="./reach_out">Reach Out!</a></li>
                 </ul>
             </nav> 
         </div>
@@ -39,8 +38,8 @@
     <section style="overflow: visible;" class="resume">
         <div style="overflow: visible;" class="container grid">
             <div class="container flex" style="flex-direction: column; margin: 2rem;"><h1><div class="signature">James Calvano</div></h1><h3>Hoboken, NJ</h3></div>
-            <div class="container flex" style="width: 100%; justify-content: space-between; align-items: baseline; overflow: unset;">
-                <div class="block" style="width:100%; margin: 10px;">
+            <div class="container flex" style="width: 100%; justify-content: space-between; align-items: flex-start; flex-wrap: wrap;">
+                <div class="block" style="margin: 10px auto; height: 15em;">
                     <h3>Coding</h3>
                     <ul>
                         <li>SQL</li>
@@ -51,7 +50,7 @@
                         <li>HTML/CSS</li>
                     </ul>
                 </div>
-                <div class="block" style="width:100%; margin: 10px;">
+                <div class="block" style="margin: 10px auto; height: 15em;">
                     <h3>Tools</h3>
                     <ul>
                         <li>Git</li>
@@ -63,10 +62,17 @@
                 </div>
             </div>
             <h2>Work Experience</h2>
-            <div class="block">
+            <div style="width: 100%; margin: auto auto;" class="block">
+                <div style="display: inline-flex;align-items: center;justify-content: space-between;width: 100%;">
+                    <h3>U.S. Bank - Global Fund Services</h3>
+                    <p><b>Jul 2022 - Present • <b id="time"></b></b></p>
+                </div>
+                <h4>Technical Systems Specialist</h4>
+            </div>
+            <div style="width: 100%; margin: auto auto;" class="block">
                 <div style="display: inline-flex;align-items: center;justify-content: space-between;width: 100%;">
                     <h3>Prudential Financial</h3>
-                    <p><b>Feb 2019 - Present • <b id="time"></b></b></p>
+                    <p><b>Feb 2019 - Jun 2022 • 3.5 years</b></b></p>
                 </div>
                 <h4>Technical Systems Specialist</h4>
                 <p>Global Technology - Financial Systems - Technology Enablement</p>
@@ -102,7 +108,7 @@
 </body>
 <script>
         let today = new Date();
-        let startDate = Date.parse("2019-02-01");
+        let startDate = Date.parse("2022-07-01");
 
         const diffTime = Math.abs(today - startDate);
         const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
