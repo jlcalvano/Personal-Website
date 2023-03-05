@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>James Calvano</title>
-    
+
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/styles.css" />    
+    <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/utilities.css" />
     <link rel="apple-touch-icon" type="image/x-icon" sizes="180x180" href="img/apple-touch-icon.png">
-    
+
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -23,6 +24,7 @@
             root.style.setProperty('--primary-color', sessionStorage.getItem("color"));
         }
     </script>
+
 <body>
     <section class="nav sticky">
         <div class="container flex">
@@ -32,17 +34,23 @@
                     <li><a href="./about">About</a></li>
                     <li><a href="./resume">Resume</a></li>
                 </ul>
-            </nav> 
+            </nav>
         </div>
     </section>
-    <section style="overflow: visible;" class="resume">
-        <div style="overflow: visible;" class="container grid">
-            <div class="container flex" style="flex-direction: column; margin: 2rem;"><h1><div class="signature">James Calvano</div></h1><h3>Hoboken, NJ</h3></div>
-            <div class="container flex" style="width: 100%; justify-content: space-between; align-items: space-between; flex-wrap: wrap;">
+    <section class="resume">
+        <div class="container grid">
+            <div class="container flex" style="flex-direction: column; margin: 2rem;">
+                <h1>
+                    <div class="signature">James Calvano</div>
+                </h1>
+                <h3>Hoboken, NJ</h3>
+            </div>
+            <div class="container flex"
+                style="width: 100%; justify-content: space-between; align-items: space-between; flex-wrap: wrap;">
                 <div class="block" style="width: 48%; height: 15em;">
-                    <h3>Coding</h3>
+                    <h3>Programming/Query Languages</h3>
                     <ul>
-                        <li>SQL</li>
+                        <li>SQL/TSQL</li>
                         <li>MDX</li>
                         <li>Python</li>
                         <li>JavaScript</li>
@@ -53,10 +61,9 @@
                 <div class="block" style="width: 48%; height: 15em;">
                     <h3>Tools</h3>
                     <ul>
-                        <li>Git</li>
                         <li>Github/Bitbucket</li>
                         <li>Tableau/PowerBi</li>
-                        <li>Denodo (Data Virtualization)</li>
+                        <li>OLAP Tools (Oracle BI, Essbase, Cognos)</li>
                         <li>Microsoft Office (Excel, PowerPoint)</li>
                     </ul>
                 </div>
@@ -68,6 +75,16 @@
                     <p><b>Jul 2022 - Present • <b id="time"></b></b></p>
                 </div>
                 <h4>Technical Systems Specialist</h4>
+                <p>Global Fund Services - Central Investor Services - Technology Enablement</p>
+                <ul>
+                    <li style="margin-left: 1rem; margin-right: 1rem;">Consult with various internal teams to explore
+                        process enhancement, and process automation </li>
+                    <li style="margin-left: 1rem; margin-right: 1rem;">Exploring the use of data visualization tools as
+                        well as OLAP Cubes (Microsoft SQL Server Analysis Services) to facilitate better business
+                        analysis</li>
+                    <li style="margin-left: 1rem; margin-right: 1rem;">Used Python (Networkx) to automate intrafund
+                        bookings for numerous large and complex private equity legal entity structures</li>
+                </ul>
             </div>
             <div style="width: 100%; margin: auto auto;" class="block">
                 <div style="display: inline-flex;align-items: center;justify-content: space-between;width: 100%;">
@@ -77,9 +94,13 @@
                 <h4>Technical Systems Specialist</h4>
                 <p>Global Technology - Financial Systems - Technology Enablement</p>
                 <ul>
-                    <li style="margin-left: 1rem; margin-right: 1rem;">Documenting, designing and developing technology solutions for Finance Associates (Accounting, Treasury, FP&A) to increase productivity, reduce operational risk</li>
-                    <li style="margin-left: 1rem; margin-right: 1rem;">Saved 500+ hours of manual Excel work through rapidly developed automated applications (Rapid Application Development)</li>
-                    <li style="margin-left: 1rem; margin-right: 1rem;">Collborating with business end-users, project managers as well as development teams</li>
+                    <li style="margin-left: 1rem; margin-right: 1rem;">Documenting, designing and developing technology
+                        solutions for Finance Associates (Accounting, Treasury, FP&A) to increase productivity, reduce
+                        operational risk</li>
+                    <li style="margin-left: 1rem; margin-right: 1rem;">Saved 500+ hours of manual Excel work through
+                        rapidly developed automated applications (Rapid Application Development)</li>
+                    <li style="margin-left: 1rem; margin-right: 1rem;">Collborating with business end-users, project
+                        managers as well as development teams</li>
                 </ul>
             </div>
             <div class="block">
@@ -107,13 +128,14 @@
     </section>
 </body>
 <script>
-        let today = new Date();
-        let startDate = Date.parse("2022-07-01");
+    let today = new Date();
+    let startDate = Date.parse("2022-07-01");
 
-        const diffTime = Math.abs(today - startDate);
-        const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
-        const elem = document.getElementById('time');
+    const diffTime = Math.abs(today - startDate);
+    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+    const elem = document.getElementById('time');
 
-        elem.innerHTML = Math.round((diffDays/365) * 100 )/100 + " years";
+    elem.innerHTML = Math.round((diffDays / 365) * 100) / 100 + " years";
 </script>
+
 </html>
