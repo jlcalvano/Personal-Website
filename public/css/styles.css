@@ -154,6 +154,11 @@ p {
     transform: scale(1.10);
 }
 
+.links a:hover {
+    transform: scale(1.10);
+}
+
+
 
 /* About  - About */
 
